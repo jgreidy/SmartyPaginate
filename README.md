@@ -533,6 +533,8 @@ SMARTYPAGINATE VARIABLE SYNTAX
     {$paginate.url} -- The pagination URL
     {$paginate.urlvar} -- The pagination URL variable (default 'next')
     {$paginate.current_item} -- the current item index
+    {$paginate.first_text} -- the text for the first link
+    {$paginate.last_text} -- the text for the last link
     {$paginate.prev_text} -- the text for the prev link
     {$paginate.next_text} -- the text for the next link
     {$paginate.limit} -- the page limit
