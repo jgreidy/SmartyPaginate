@@ -1,0 +1,47 @@
+{if $paginate.page_current neq 1}
+    <a href="{$paginate.url}&pn=1"><button class="btn btn-default" type="button"><span>{$paginate.first_text}</span></button></a>
+{/if}
+
+{if $paginate.page_current > 1}
+    <a href="{$paginate.url}&pn={$paginate.page[$paginate.page_current-1].item_start}"><button class="btn btn-default" type="button"><span>{$paginate.prev_text}</span></button></a>
+{/if}
+
+{if $paginate.size > 1}
+    {if $paginate.page_current > 3}
+        <button class="btn btn-default" type="button"><span>[...]</b></span></button>
+    {/if}
+
+    {if $paginate.page_current > 3}
+        {if $paginate.page_current+3 <= $paginate.page_total}
+            {for $pag=$paginate.page_current-3 to $paginate.page_current+3}
+                <a href="{$paginate.url}&pn={$paginate.page[$pag].item_start}"><button class="btn btn-default{if $pag eq $paginate.page_current} active{/if}" type="button"><span>{$paginate.page[$pag].number}</span></button></a>
+            {/for}
+        {else}
+            {for $pag=$paginate.page_current-3 to $paginate.page_total}
+            <a href="{$paginate.url}&pn={$paginate.page[$pag].item_start}"><button class="btn btn-default{if $pag eq $paginate.page_current} active{/if}" type="button"><span>{$paginate.page[$pag].number}</span></button></a>
+            {/for}
+        {/if}
+    {else}
+        {if $paginate.page_current+3 <= $paginate.page_total}
+            {for $pag=1 to $paginate.page_current+3}
+                <a href="{$paginate.url}&pn={$paginate.page[$pag].item_start}"><button class="btn btn-default{if $pag eq $paginate.page_current} active{/if}" type="button"><span>{$paginate.page[$pag].number}</span></button></a>
+            {/for}
+        {else}
+            {for $pag=1 to $paginate.page_total}
+                <a href="{$paginate.url}&pn={$paginate.page[$pag].item_start}"><button class="btn btn-default{if $pag eq $paginate.page_current} active{/if}" type="button"><span>{$paginate.page[$pag].number}</span></button></a>
+            {/for}
+        {/if}
+    {/if}
+
+    {if $paginate.page_current + 3 < $paginate.page_total}
+        <button class="btn btn-default" type="button"><span>[...]</b></span></button>
+    {/if}
+    
+    {if $paginate.page_current+1 <= $paginate.page_total}
+        <a href="{$paginate.url}&pn={$paginate.page[$paginate.page_current+1].item_start}"><button class="btn btn-default" type="button"><span>{$paginate.next_text}</span></button></a>
+    {/if}
+
+    {if $paginate.page_current neq $paginate.page_total}
+        <a href="{$paginate.url}&pn={$paginate.page[$paginate.page_total].item_start}"><button class="btn btn-default" type="button"><span>{$paginate.last_text}</span></button></a>
+    {/if}
+{/if}
