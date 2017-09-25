@@ -20,9 +20,9 @@
  *
  * @link http://www.phpinsider.com/php/code/SmartyPaginate/
  * @copyright 2001-2005 New Digital Group, Inc.
- * @author Monte Ohrt <monte at newdigitalgroup dot com>, Matt Rothtauscher <matt.rothtauscher@googlemail.com>
+ * @author Monte Ohrt <monte at newdigitalgroup dot com>
  * @package SmartyPaginate
- * @version 1.7
+ * @version 1.6
  */
 
 
@@ -246,8 +246,6 @@ class SmartyPaginate {
             $_paginate['current_item'] = SmartyPaginate::getCurrentItem($id);
             $_paginate['prev_text'] = SmartyPaginate::getPrevText($id);
             $_paginate['next_text'] = SmartyPaginate::getNextText($id);
-            $_paginate['first_text'] = SmartyPaginate::getFirstText($id);
-            $_paginate['last_text'] = SmartyPaginate::getLastText($id);
             $_paginate['limit'] = SmartyPaginate::getLimit($id);
             
             $_item = 1;
