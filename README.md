@@ -5,12 +5,13 @@ NAME:
 
 AUTHOR:
     Monte Ohrt (monte [AT] ohrt [DOT] com)
+    Matt Rothtauscher (matt.rothtauscher@googlemail.com)
 
 VERSION:
-    1.6
+    1.7
     
 DATE:
-    May 30th, 2007
+    September 25th, 2017
 
 WEBSITE:
     http://www.phpinsider.com/php/code/SmartyPaginate/

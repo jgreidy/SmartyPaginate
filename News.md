@@ -1,3 +1,9 @@
+1.7 September 25th 2017
+-----------------
+
++ Added {$paginate.first_text}
++ Added {$paginate.last_text}
+
 1.6 May 30th 2007
 -----------------
 
