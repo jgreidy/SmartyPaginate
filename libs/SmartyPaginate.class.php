@@ -20,7 +20,7 @@
  *
  * @link http://www.phpinsider.com/php/code/SmartyPaginate/
  * @copyright 2001-2005 New Digital Group, Inc.
- * @author Monte Ohrt <monte at newdigitalgroup dot com>, Matt Rothtauscher <matt.rothtauscher@googlemail.com>
+ * @author Monte Ohrt <monte at newdigitalgroup dot com>, Matt rothtauscher <matt.rothtauscher@googlemail.com>
  * @package SmartyPaginate
  * @version 1.7
  */
