@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf622d74aa5bb0bf7299c7b7ebeec86e",
+    "content-hash": "26dde2e39f308a0a1a1cedbbd4c4e309",
     "packages": [
         {
             "name": "slowprog/composer-copy-file",
