@@ -4,8 +4,56 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "578a6bc07b6ffc758d3e7806a3cce5dc",
+    "content-hash": "cf622d74aa5bb0bf7299c7b7ebeec86e",
     "packages": [
+        {
+            "name": "slowprog/composer-copy-file",
+            "version": "0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slowprog/CopyFile.git",
+                "reference": "5a82ba4613948f70b2d4b041c13c1c9259fc6477"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/slowprog/CopyFile/zipball/5a82ba4613948f70b2d4b041c13c1c9259fc6477",
+                "reference": "5a82ba4613948f70b2d4b041c13c1c9259fc6477",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "mikey179/vfsstream": "~1",
+                "php-mock/php-mock-phpunit": "~1",
+                "phpunit/phpunit": "5.7.27",
+                "symfony/filesystem": "~2.7",
+                "symfony/finder": "~2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SlowProg\\CopyFile\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrey Tyshev",
+                    "email": "slowprog@gmail.com"
+                }
+            ],
+            "description": "Composer script copying your files after install",
+            "homepage": "https://github.com/SlowProg/composer-copy-file",
+            "keywords": [
+                "copy file"
+            ],
+            "time": "2019-01-10T05:06:10+00:00"
+        },
         {
             "name": "smarty/smarty",
             "version": "v2.6.31",
@@ -56,6 +104,24 @@
                 "templating"
             ],
             "time": "2017-11-03T06:39:13+00:00"
+        },
+        {
+            "name": "smartypaginate/smartypaginate",
+            "version": "1.7",
+            "dist": {
+                "type": "tar",
+                "url": "https://github.com/jgreidy/SmartyPaginate/archive/master.zip"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "SmartyPaginate/libs/SmartyPaginate.class.php"
+                ],
+                "psr-0": {
+                    "smartypaginate\\": "smartypaginate/smartypaginate/smartypaginate/"
+                }
+            },
+            "description": "A class/plugin for data set pagination within the Smarty template environment."
         }
     ],
     "packages-dev": [],
