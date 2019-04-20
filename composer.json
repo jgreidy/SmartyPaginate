@@ -1,8 +1,8 @@
 {
+    "name": "smartypaginate/smartypaginate",
+    "description": "A class/plugin for data set pagination within the Smarty template environment.",
+    "version": "1.7",
     "package": {
-        "name": "smartypaginate/smartypaginate",
-        "description": "A class/plugin for data set pagination within the Smarty template environment.",
-        "version": "1.7",
         "dist": {
             "type": "tar",
             "url": "https://github.com/jgreidy/SmartyPaginate/archive/master.zip"
@@ -15,23 +15,5 @@
                 "smartypaginate\\": "smartypaginate/smartypaginate/smartypaginate/"
             }
         }                              
-    },
-    "require": {
-        "smarty/smarty": "^2.6",
-        "smartypaginate/smartypaginate": "^1.7",
-        "slowprog/composer-copy-file": "~0.3"
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "SlowProg\\CopyFile\\ScriptHandler::copy"
-        ],
-        "post-update-cmd": [
-            "SlowProg\\CopyFile\\ScriptHandler::copy"
-        ]
-    },
-    "extra": {
-        "copy-file": {
-            "vendor/smartypaginate/smartypaginate/plugins/": "vendor/smarty/smarty/libs/plugins/"
-        }
     }
 }
