@@ -1,25 +1,25 @@
 {
     "repositories": [
         {
-        "type": "package",
-        "package": {
-            "name": "smartypaginate/smartypaginate",
-            "description": "A class/plugin for data set pagination within the Smarty template environment.",
-            "version": "1.7",
-            "dist": {
-                "type": "tar",
-                "url": "https://github.com/jgreidy/SmartyPaginate/archive/master.zip"
-            },
-            "autoload": {
-                "files": [
-                    "SmartyPaginate/libs/SmartyPaginate.class.php"
-                ],
-                "psr-0": {
-                    "smartypaginate\\": "smartypaginate/smartypaginate/smartypaginate/"
-                }
-            }                              
+            "type": "package",
+            "package": {
+                "name": "smartypaginate/smartypaginate",
+                "description": "A class/plugin for data set pagination within the Smarty template environment.",
+                "version": "1.7",
+                "dist": {
+                    "type": "tar",
+                    "url": "https://github.com/jgreidy/SmartyPaginate/archive/master.zip"
+                },
+                "autoload": {
+                    "files": [
+                        "SmartyPaginate/libs/SmartyPaginate.class.php"
+                    ],
+                    "psr-0": {
+                        "smartypaginate\\": "smartypaginate/smartypaginate/smartypaginate/"
+                    }
+                }                              
+            }
         }
-    }
     ],
     "require": {
         "smarty/smarty": "^2.6",
