@@ -58,7 +58,7 @@ class SmartyPaginate {
      *
      * @param string $id the pagination id
      */
-    public public static function isConnected($id = 'default') {
+    public static function isConnected($id = 'default') {
         return isset($_SESSION['SmartyPaginate'][$id]);
     }    
         
