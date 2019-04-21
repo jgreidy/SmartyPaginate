@@ -1,7 +1,7 @@
 {
     "name": "smartypaginate/smartypaginate",
     "description": "A class/plugin for data set pagination within the Smarty template environment.",
-    "version": "1.7.6",
+    "version": "1.7.7",
     "package": {
         "dist": {
             "type": "tar",
