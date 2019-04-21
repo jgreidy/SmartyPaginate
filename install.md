@@ -11,6 +11,7 @@ Minimal composer.json:
         }
     ],
     "require": {
+        "smarty/smarty": "^2.6",
         "smartypaginate/smartypaginate": "^1.7"
     }
 }
